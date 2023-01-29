@@ -1,5 +1,6 @@
 package org.example.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
@@ -8,5 +9,5 @@ public class Customer {
     private String username;
     private String password;
     private Address address;
-    private List<Order> orderList;
+    private List<Order> orderList=new ArrayList<>();
 }
