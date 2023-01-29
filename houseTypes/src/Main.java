@@ -44,14 +44,34 @@ public class Main {
         villa3.setHouseType(HouseType.VILLA);
         villa3.setPrice(7000000);
 
+
         List<House>houses=List.of(summerhouse1,summerhouse2,summerhouse3,villa1,villa2,villa3);
         houseService.addAll(houses);
-        System.out.println(houseService.getAll());
-        List<House> houseByHouseType = houseService.getHouseByHouseType(HouseType.SUMMERHOUSE);
-        System.out.println(houseByHouseType.size());
+        System.out.println("**************** TÜM EVLER **********");
+
+        houseService.printAllHouse(houses);
+
+        System.out.println("**************** TİPİNE GÖRE EVLER***************");
+
+        List<House> houseByHouseTypeSummerhouse = houseService.getHouseByHouseType(HouseType.SUMMERHOUSE);
+        List<House> houseByHouseTypeVilla= houseService.getHouseByHouseType(HouseType.VILLA);
+        houseService.printAllHouse(houseByHouseTypeVilla);
+        houseService.printAllHouse(houseByHouseTypeSummerhouse);
+
+        System.out.println("**************** TÜM EVLERİN TOPLAM FİYATI ***************");
         System.out.println(houseService.getTotalPrice());
+        System.out.println("*************** TİPİNE GÖRE EVLERİN TOPLAM FİYATI***************");
+        System.out.println(houseService.getTotalPriceByHouseType(HouseType.VILLA));
+        System.out.println(houseService.getTotalPriceByHouseType(HouseType.SUMMERHOUSE));
+        System.out.println("**************** TÜM EVLERİN ORTALAMA METREKARESİ ***************");
         System.out.println(houseService.getAvgSquareMeter());
-        houseService.printAllHouse(houseByHouseType);
+        System.out.println("**************** TİPİNE GÖRE EVLERİN ORTALAMA METREKARESİ***************");
+        System.out.println(houseService.getAvgSquareMeterByType(HouseType.VILLA));
+        System.out.println(houseService.getAvgSquareMeterByType(HouseType.SUMMERHOUSE));
+
+        System.out.println("**************** ODA SAYISINA GÖRE EVLER***************");
+        List<House> housesByRoomCount= houseService.filterHousesByRoomCount(10);
+        houseService.printAllHouse(housesByRoomCount);
     }
 
 
