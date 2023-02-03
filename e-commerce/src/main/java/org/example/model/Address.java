@@ -1,4 +1,13 @@
 package org.example.model;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 
 public class Address {
     private String name;
@@ -7,57 +16,6 @@ public class Address {
     private String street;
     private int no;
 
-
-    public Address() {
-    }
-
-    public Address(String country, String city, String street, int no, String name) {
-        this.country = country;
-        this.city = city;
-        this.street = street;
-        this.no = no;
-        this.name = name;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getStreet() {
-        return street;
-    }
-
-    public void setStreet(String street) {
-        this.street = street;
-    }
-
-    public int getNo() {
-        return no;
-    }
-
-    public void setNo(int no) {
-        this.no = no;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     @Override
     public String toString() {
@@ -70,3 +28,4 @@ public class Address {
                 '}';
     }
 }
+
