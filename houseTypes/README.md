@@ -1,21 +1,24 @@
-## 2. Ödev - Sipariş uygulaması - İçerik
+# 1. Ödev - Ev Tipleri Uygulaması - İçerik
 
-Bir müşterinin, sipariş oluşturup, faturalarını kaydedebildiği ve görüntüleyebildiği bir uygulama yazın. 
-# Gereksinimler
-Final, static, overload, override, constructor, kalıtım, polimorfizim, encapsulation, List, Set, Map kavramlarını kullanılmalıdır. 
-Sisteme eklemeler yapabilirsiniz.
-Main method üzerinde çalışması yeterlidir. 
-SOLID prensiplerine uygun olarak yazmaya çalışınız. 
-# Ödev Adımları
-Listeleme işlemleri stream kullanılarak yapılmalı.
-Maven projesi oluşturun.
-Maven komutlarını çalıştırıp, çıktıyı ekleyin
-Tüm müşterileri listeleyin 
-Yeni Müşteri oluşturabilen
-İçerisinde ‘C’ harfi olan müşterileri listeleyin
-Haziran ayında kayıt olan müşterilerin faturalarınının toplam tutarını listeleyin
-Sistemdeki tüm faturaları listeleyin
-Sistemdeki 1500TL üstündeki faturaları listeleyin
-Sistemdeki 1500TL üstündeki faturaları ortalamasını hesaplayın
-Sistemdeki 500TL altındaki faturalara sahip müşterilerin isimleri listeleyin
-Haziran ayını faturalarını ortalaması 750 altı olan firmalarının hangi sektörde olduğunu listeleyen kodu yazın.
+Ev, Villa, Yazlık tipinde 3 adet ev tipi oluşturunuz.
+
+Bir class içerisinde en az 3er tane Ev, Villa ve Yazlık nesnelerinden oluşturun ve bu örnekleri size dönen metotları yazınız. (getEvList, getVillaList vs).
+
+## Bir servis class'ının içine de aşağıdaki metotları yazınız:
+
++Evlerin toplam fiyatlarını dönen bir metot
++Villaların toplam fiyatlarını dönen bir metot
++Yazlıkların toplam fiyatlarını dönen metot
++Tüm tipteki evlerin toplam fiyatını dönen metot
++Evlerin ortalama metrekaresini dönen bir metot
++Villaların ortalama metrekaresini dönen bir metot
++Yazlıkların ortalama metrekaresini dönen metot
++Tüm tipteki evlerin ortalama metrekaresini dönen metot
++Oda ve salon sayısına göre tüm tipteki evleri filtreleyip dönen metot
+
+### Not:
+
++İsimlendirmelerin İngilizce olmasına dikkat ediniz.
++Nesneye yönelik programlamaya uygun tasarım yapınız.
++Clean code prensiplerine uyunuz.
++Main metot içinde tüm metotları konsola anlamlı şekilde yazdırınız.
