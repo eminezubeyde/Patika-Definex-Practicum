@@ -18,7 +18,7 @@ public class AddressHelper {
         String street = scanner.next();
         System.out.println("kapı numarası giriniz");
         int no = scanner.nextInt();
-        return new Address(country, city, street, no, name);
+        return new Address(country, city, street, name,no);
 
 
     }
